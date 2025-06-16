@@ -1,0 +1,781 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+    display: block
+
+body
+    line-height: 1
+
+ol, ul
+    list-style: none
+
+blockquote, q
+    quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+    content: ''
+    content: none
+
+table
+    border-collapse: collapse
+    border-spacing: 0
+
+// -----------------------------------------------------    
+
+$max-width: 1300px
+$flex_width: 50%
+$main_color: linear-gradient(140deg, #7e9aff, #7a6fff)
+$_color: #fff
+$main_color_span: #3B2BD6
+$title_color: #7A6FFF
+$title_font_size: 32px
+$title_font_weight: 900
+$p_font_size: 16px
+
+%display_flex
+    display: flex
+    align-items: center
+    justify-content: center
+
+// -----------------------------------------------------    
+
+html
+    scroll-behavior: smooth
+
+body
+    background-color: #EEEEEE
+
+.header_div
+    position: relative
+    .header_div_content
+        margin: 0 auto
+        @extend %display_flex
+.spacer
+    height: 0
+    transition: height 0.3s ease
+    &:active
+        height: 80px
+.header
+    position: absolute
+    width: $max-width
+    height: 70px
+    z-index: 3
+    @extend %display_flex
+    top: 28px
+    border-radius: 6px
+    .header_content
+        width: $max-width
+        padding-left: 10px
+        padding-right: 10px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        margin: 0 auto
+        .logo
+            width: 30%
+            .logo_content
+                a
+                    display: inline-block
+                    img
+        .menu_language
+            width: 70%
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .menu_language_content
+                width: 100%
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                .hamburger
+                    font-size: 1.5em
+                    cursor: pointer
+                    display: none
+                    user-select: none
+                .menu
+                    width: 70%
+                .nav-menu
+                    display: flex
+                    .menu_content
+                        margin: 0 auto
+                        width: 100%
+                        ul
+                            display: flex
+                            justify-content: space-between
+                            flex-wrap: wrap
+                            li
+                                margin: 0 16px
+                                a
+                                    font-size: 13px
+                                    color: #fff
+                                    text-decoration: none
+                                    transition: all 0.8s ease
+                                    &:hover
+                                        color: #000
+                .show
+                    display: block
+                .language
+                    width: 20%
+                    position: relative
+                    display: flex
+                    justify-content: flex-end
+                    margin-left: 20px
+                    .language_content
+                        display: flex
+                        justify-content: flex-end
+                        .dropdown-toggle
+                            font-size: 16px
+                            cursor: pointer
+                            width: 29px
+                            height: 29px
+                    .dropdown-content
+                        display: none
+                        position: absolute
+                        top: 36px
+                        right: 0
+                        background: $main_color
+                        min-width: 160px
+                        box-shadow: 0px 8px 16px rgba(0,0,0,0.2)
+                        z-index: 3
+                        span
+                            color: black
+                            padding: 21px 16px
+                            text-decoration: none
+                            display: flex
+                            align-items: center
+                            border-bottom: 2px solid #fff
+                            &:nth-child(4)
+                                border-bottom: none
+                            &:hover
+                                p
+                                    transform: scale(1.5)
+                            img
+                            p
+                                color: #fff
+                                margin-left: 22px
+                                font-size: 12px
+                                transition: font-size 4s ease-in-out
+                                transition: all 0.4s ease-out
+                    .show
+                        display: block
+.fixed
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 2
+    width: 100%
+    background: $main_color
+    backdrop-filter: blur(10px)
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2)
+    transition: all 0.2s ease-in-out
+    &.hidden
+        display: none
+    .header_content
+        .menu_language
+            .menu_language_content
+                .menu
+                    .menu_content
+                        ul
+                            li
+                                a
+                                    color: #fff
+.banner
+    position: relative
+    z-index: -2
+    width: 100%
+    max-width: 1920px
+    height: 700px
+    margin-left: auto
+    margin-right: auto
+    overflow: hidden
+    .banner_content
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        overflow: hidden
+        position: relative
+        .banner_img
+            position: relative
+            display: flex
+            align-items: end
+            .banner_main
+                position: absolute
+                width: 100%
+                display: flex
+                justify-content: space-around
+                align-items: flex-end
+            .banner_main_content
+                display: flex
+                align-items: center
+                width: $max-width
+                .banner_main_img
+                    width: 50%
+                    position: relative
+                    margin-top: 40px
+                    .banner_main_img_content
+                        margin: 0 auto
+                        img
+                            width: 80%
+                .banner_main_button
+                    position: relative
+                    width: 50%
+                    z-index: 2
+                    .banner_main_button_content
+                        margin: 0 auto
+                        .banner_main_button_dow
+                            position: relative
+                            .banner_main_button_dow_content
+                                display: block
+                                h1
+                                    color: #fff
+                                    line-height: 2
+            .banner_img_content
+                margin: 0 auto
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+@media screen and (max-width: 770px)
+    .header
+        width: 90%
+        .header_content
+            .logo
+            .menu_language
+                .menu_language_content
+                    .hamburger
+                        display: block
+                        color: #000000
+                    .menu
+                    .nav-menu
+                        display: none
+                        flex-direction: column
+                        background-color: #444
+                        position: absolute
+                        top: 100%
+                        left: 0
+                        width: 100%
+                        .menu_content
+                            width: 100%
+                            ul
+                                width: 100%
+                                line-height: 4
+                                li
+                                    border-bottom: 2px solid #fff
+                                    width: 100%
+                                    &:nth-child(4)
+                                        border-bottom: none
+                                    a
+                                        width: 100%
+                                        display: inline-block
+                    .show
+                        display: flex
+                        z-index: 3
+                        background: $main_color
+                        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2)
+                        .menu_content
+                            ul
+                                li
+                                    a
+                                        color: #fff
+
+@media screen and (max-width: 1690px)
+    .header
+        width: 90%
+        margin: 0 auto
+    .banner
+        height: 100%
+        .banner_content
+            .banner_img
+                position: relative
+                width: 100%
+                .banner_main
+                    position: relative
+                    .banner_main_content
+                        width: 90%
+                .banner_img_content
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    z-index: -1
+                    img
+
+@media screen and (max-width: 1400px)
+    .header_div
+        .header_div_content
+            .header
+                .header_content
+                    .logo
+                    .menu_language
+            .banner
+                .banner_content
+                    .banner_img
+                        .banner_main
+                            .banner_main_content
+                                .banner_main_button
+                                    .banner_main_button_content
+                                        .banner_main_button_dow
+                                            .banner_main_button_dow_content
+                                                img
+                                                    display: none
+
+@media screen and (max-width: 822px)
+    .header_div
+        .header_div_content
+            .header
+            .banner
+                height: 400px
+                background: url(../images/banner.jpg)
+                background-size: cover
+                .banner_content
+                    height: 100%
+                    .banner_img
+                        .banner_main
+                            position: absolute
+                            height: 100%
+                            .banner_main_content
+                                justify-content: center
+                                margin: 40px 0
+                                .banner_main_button
+                                    width: 90%
+                                .banner_main_img
+                                    display: none
+                        .banner_img_content
+                            display: none
+
+// -----------------------------------------------------------------------------------------    
+
+// position
+.position
+    position: relative
+    .position_content
+        margin: 0 auto
+        .position_title
+            position: relative
+            margin: 60px 0
+            .position_title_content
+                width: 100%
+                max-width: $max-width
+                margin: 0 auto
+                h1
+                    color: $title_color
+                    font-size: 24px
+                    font-weight: 900
+                    text-align: center
+                p
+                    color: #000000
+                    font-size: 16px
+                    font-weight: 300
+                    text-align: center
+                    margin-top: 10px
+        .position_area
+            position: relative
+            .position_area_content
+                width: 100%
+                max-width: $max-width
+                margin: 0 auto
+                @extend %display_flex
+                .position_area_img
+                    width: 50%
+                    margin: 0 10px
+                    position: relative
+                    &::after
+                        content: ''
+                        position: absolute
+                        top: 0
+                        left: 0
+                        width: 100%
+                        height: 100%
+                        background: url(../images/position_2.png) no-repeat center center
+                        z-index: -1
+                    .position_area_img_content
+                        margin: 0 auto
+                        img
+                .position_text
+                    width: 50%
+                    margin: 0 10px
+                    position: relative
+                    .position_text_content
+                        margin: 0 auto
+                        p
+                            color: #000000
+                            font-size: 16px
+                            font-weight: 300
+                            text-align: left
+                            line-height: 2
+
+@media screen and (max-width: 900px)
+    .position
+        .position_content
+            .position_title
+                .position_title_content
+                    h1
+                        font-size: 20px
+            .position_area
+                .position_area_content
+                    flex-wrap: wrap
+                    .position_area_img
+                        width: 90%
+                        &::after
+                            left: 0
+                        .position_area_img_content
+                            text-align: center
+                    .position_text
+                        width: 90%
+                        margin-top: 60px
+                        .position_text_content
+                            p
+                                text-align: center
+
+// -----------------------------------------------------------------------------------------      
+
+// advantages
+.advantages
+    position: relative
+    margin-bottom: 650px
+    @extend %display_flex
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 115%
+        height: 110rem
+        display: none
+        background-color: $main_color_span
+        border-radius: 50%
+        transform: rotate(136deg)
+        z-index: -3
+    .advantages_content
+        width: 100%
+        margin: 0 auto
+        .advantages_title
+            position: relative
+            margin: 80px 0
+            .advantages_title_content
+                margin: 0 auto
+                h1
+                    color: #fff
+                    font-size: 24px
+                    font-weight: 900
+                    text-align: center
+                p
+                    color: #fff
+                    font-size: 16px
+                    font-weight: 300
+                    text-align: center
+                    margin-top: 10px
+        .advantages_ul
+            position: relative
+            .advantages_ul_content
+                width: 100%
+                max-width: $max-width
+                margin: 0 auto
+                .block-container
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: center
+                    gap: 16px
+                    .block
+                        width: 23%
+                        height: 100%
+                        background-color: #f0f0f0
+                        text-align: center
+                        border-radius: 16px
+                        border: 4px solid $main_color_span
+                        cursor: pointer
+                        box-shadow: 0 2px 5px rgba(0,0,0,0.1)
+                        transition: transform 0.2s
+                        &:hover
+                            transform: scale(1.05)
+                        .block_content
+                            height: 100%
+                            margin: 0 auto
+                            border-radius: 16px
+                            .block_svg
+                                position: relative
+                                z-index: 1
+                                overflow: hidden
+                                display: flex
+                                justify-content: center
+                                padding: 30px 0
+                                background-color: #fff
+                                border-top-left-radius: 16px
+                                border-top-right-radius: 16px
+                                svg
+                                    width: 50%
+                            .block_text
+                                position: relative
+                                padding: 23px 0
+                                background: $main_color
+                                .block_text_content
+                                    margin: 0 auto
+                                    p
+                                        color: #fff
+                                        font-size: 16px
+                                        font-weight: 300
+                                        line-height: 2
+                .overlay
+                    position: fixed
+                    top: 0
+                    left: 0
+                    right: 0
+                    bottom: 0
+                    width: 100%
+                    height: 100%
+                    background: rgba(0,0,0,0.9)
+                    display: none
+                    justify-content: center
+                    align-items: center
+                    z-index: 4
+                    .modal
+                        background: white
+                        width: 40%
+                        max-width: 90%
+                        position: relative
+                        box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+                        border: 4px solid $title_color
+                        border-radius: 16px
+                        z-index: 4
+                        .close-btn
+                            position: absolute
+                            top: 10px
+                            right: 10px
+                            background: none
+                            border: none
+                            font-size: 38px
+                            cursor: pointer
+                            background-color: #fff
+                            border-radius: 50%
+                            width: 40px
+                            height: 40px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            z-index: 4
+                        .modal-header
+                            padding: 40px
+                            background: $main_color
+                            text-align: center
+                            border-top-left-radius: 10px
+                            border-top-right-radius: 10px
+                            img
+                            h2
+                                color: #fff
+                                margin-top: 30px
+                        p
+                            padding: 40px
+                            white-space: pre-line
+                            line-height: 1.6
+                            background-color: #fff
+                            border-bottom-left-radius: 16px
+                            border-bottom-right-radius: 16px
+        .policy
+            position: relative
+            .policy_content
+                width: 100%
+                max-width: $max-width
+                margin: 0 auto
+                .policy_title
+                    position: relative
+                    margin: 80px 0
+                    .policy_title_content
+                        margin: 0 auto
+                        p
+                            text-align: center
+                            color: #fff
+                            font-size: 16px
+                            font-weight: 300
+                .policy_ul
+                    position: relative
+                    .policy_ul_content
+                        margin: 0 auto
+                        display: flex
+                        align-items: flex-start
+                        justify-content: center
+                        ul
+                            width: 50%
+                            margin: 0 16px
+                            display: block
+                            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2)
+                            li
+                                color: #fff
+                                p
+                                    padding: 20px
+                                    text-align: center
+                                &:nth-child(1)
+                                    border: 2px solid #fff
+                                &:nth-child(2)
+                                    p
+                                        padding: 20px
+                                        background-color: $title_color
+                                &:nth-child(3)
+                                    padding: 20px
+                                    background-color: #fff
+                                    @extend %display_flex
+                                    p
+                                        color: #000
+                        ol
+                            width: 50%
+                            margin: 0 16px
+                            display: block
+                            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2)
+                            li
+                                color: #fff
+                                p
+                                    padding: 20px
+                                    text-align: center
+                                &:nth-child(1)
+                                    border: 2px solid #fff
+                                &:nth-child(2)
+                                    p
+                                        padding: 20px
+                                        background-color: $title_color
+                                &:nth-child(3)
+                                    padding: 20px
+                                    background-color: #fff
+                                    @extend %display_flex
+                                    p
+                                        color: #000
+        .vision_text
+            position: relative
+            .vision_text_content
+                width: 100%
+                max-width: $max-width
+                margin: 0 auto
+                .vision_title
+                    position: relative
+                    margin: 80px 0
+                    .vision_text_content
+                        margin: 0 auto
+                        h1
+                            color: #fff
+                            font-size: 24px
+                    .vision_text_content
+                        h1
+                            color: #fff
+                            font-size: 24px
+                            font-weight: 900
+                            text-align: center
+                        p
+                            color: #fff
+                            font-size: 16px
+                            font-weight: 300
+                            text-align: center
+                            margin-top: 10px
+                .vision_p
+                    position: relative
+                    margin-top: 80px
+                    .vision_p_content
+                        display: flex
+                        justify-content: right
+                        p
+                            width: 50%
+                            color: #fff
+                            font-size: 16px
+                            line-height: 2
+                            text-shadow: 0 0 10px rgba(0, 0, 0, 1)
+        .vision
+            position: absolute
+            top: -15%
+            width: 100%
+            text-align: center
+            z-index: -1
+            overflow: hidden
+            .vision_content
+                margin: 0 auto
+                img
+
+@media screen and (max-width: 1273px)
+    .advantages
+        overflow: hidden
+        margin-bottom: 0px
+        margin-top: 80px
+        &::after
+            display: block
+            width: 100%
+            height: 110%
+            transform: rotate(0deg)
+            border-radius: 300px
+        .advantages_content
+            .vision_text
+                .vision_text_content
+                    .vision_title
+                    .vision_p
+                        .vision_p_content
+                            justify-content: center
+                            p
+                                width: 90%
+                                text-align: center
+                                margin-bottom: 80px
+            .vision
+                display: none
+
+@media screen and (max-width: 870px)
+    .advantages
+        .advantages_content
+            .advantages_ul
+                .advantages_ul_content
+                    .block-container
+                        .block
+                            width: 40%
+                            .block_content
+                                .block_svg
+                                    &::after
+                                        top: -80px
+                    .overlay   
+                        .modal
+                            width: 90%                 
+            .policy
+                .policy_content
+                    .policy_title
+                    .policy_ul
+                        .policy_ul_content
+                            flex-wrap: wrap
+                            ul
+                                width: 90%
+                            ol
+                                width: 90%
+                                margin-top: 60px
+
+// -----------------------------------------------------------------------------------------                                
+
+.footer
+    background-color: $title_color
+    .footer_content
+        margin: 0 auto
+        width: $max-width
+        text-align: center
+        padding: 10px 0
+        p
+            color: #fff
+            font-size: 12px
+@media screen and (max-width: 1192px)
+    .footer
+        .footer_content
+            width: 90%
+
+// -----------------------------------------------------------------------------------------    

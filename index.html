@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./images/main_logo.png" />
+    <title>SPay</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="header_div">
+        <div class="header_div_content">
+
+
+            <div class="spacer" id="spacer"></div>
+            <div class="header" id="header">
+                <div class="header_content">
+                    <div class="logo">
+                        <div class="logo_content">
+                            <a href="./index.html">
+                                <img src="./images/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu_language">
+                        <div class="menu_language_content">
+                            <div class="hamburger" id="hamburger">☰</div>
+                            <div class="menu nav-menu" id="nav-menu">
+                                <div class="menu_content">
+                                    <ul>
+                                        <li><a class="scroll-link" href="#position" data-i18n="nav.position">我们的定位</a></li>
+                                        <li><a class="scroll-link" href="#advantages" data-i18n="nav.advantages">核心优势</a></li>
+                                        <li><a class="scroll-link" href="#Vision" data-i18n="nav.vision">我们的愿景</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="language">
+                                <div class="language_content">
+                                    <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">
+                                        <img id="languageIcon" src="./images/icon_1.svg" alt="简体中文">
+                                    </a>
+                                    <div id="dropdownMenu" class="dropdown-content">
+                                        <span onclick="changeLanguage('zh-CN')">
+                                            <img src="./images/icon_1.svg" alt="简体中文">
+                                            <p>简体中文</p>
+                                        </span>
+                                        <span onclick="changeLanguage('en')">
+                                            <img src="./images/icon_2.svg" alt="English">
+                                            <p>English</p>
+                                        </span>
+                                        <span onclick="changeLanguage('ja')">
+                                            <img src="./images/icon_3.svg" alt="日文">
+                                            <p>日文</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- banner -->
+            <div class="banner">
+                <div class="banner_content">
+                    <div class="banner_img">
+                        <div class="banner_main">
+                            <div class="banner_main_content">
+                                <div class="banner_main_button">
+                                    <div class="banner_main_button_content">
+                                        <div class="banner_main_button_dow">
+                                            <div class="banner_main_button_dow_content">
+                                                <img src="./images/logo_bg.png" alt="Banner_logo">
+                                                <h1 data-i18n="banner.title">SPAY是一款突破传统框架的创新支付平台，不只提供即时安全的资金流通服务，更打破中介壁垒，让用户直接交易，并开放经过验证的用户成为「余额供应者」，真正实现共享经济在支付领域的应用。
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="banner_main_img">
+                                    <div class="banner_main_img_content">
+                                        <img src="./images/portrait.png" alt="Banner">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner_img_content">
+                            <img src="./images/banner.jpg" alt="Banner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+
+    <!-- position -->
+    <div class="position">
+        <div class="position_content">
+            <div class="position_title">
+                <div class="position_title_content" id="position">
+                    <h1 data-i18n="position.title">我们的定位</h1>
+                    <p data-i18n="position.subtitle">重新定义支付的本质</p>
+                </div>
+            </div>
+            <div class="position_area">
+                <div class="position_area_content">
+                    <div class="position_area_img">
+                        <div class="position_area_img_content">
+                            <img src="./images/position_1.png" alt="position">
+                        </div>
+                    </div>
+                    <div class="position_text">
+                        <div class="position_text_content">
+                            <p data-i18n="position.content">SPAY不仅是一个支付工具，更是一场彻底改变资金流通方式的革命。我们致力于创造一个无需中间代理、用户直接交易的全新支付生态，让每个人都能成为资金流的主角与参与者。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+
+    <!-- advantages -->
+    <div class="advantages">
+        <div class="advantages_content">
+            <div class="advantages_title">
+                <div class="advantages_title_content" id="advantages">
+                    <h1 data-i18n="advantages.title">核心优势</h1>
+                    <p data-i18n="advantages.subtitle">SPAY如何改变您的支付体验？</p>
+                </div>
+            </div>
+            <div class="advantages_ul">
+                <div class="advantages_ul_content">
+                    <ul class="block-container">
+                        <l1 class="block" data-id="1" data-title="零中介化直接交易模式" data-content="我们独创的直接交易系统让买卖双方无需透过代理商，也可以直接完成资金交换，节省中间环节可能产生的额外费用。
+                        
+                        - 降低交易成本：省去中间商抽成，交易更划算。
+                        - 提高交易效率：减少流程环节，资金流转更快速。
+                        - 增强交易透明度：全程可视化，交易更放心。" data-icon="./images/tick_2.png">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        fill: none;
+                                                        stroke: #7a6fff;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-width: 3px;
+                                                        stroke-dashoffset: 1114px;
+                                                        stroke-dasharray: 1114px;
+                                                        animation: draw 8s infinite ease-in-out;
+                                                    }
+
+                                                    @keyframes draw {
+                                                        100% {
+                                                            stroke-dashoffset: 0;
+                                                        }
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="st0"
+                                                d="M2.28,62.78v15.3h26.31s3.85.11,7.38-3.52c3.52-3.63,4.6-7.16,4.6-7.16l-20,.1s6.93-6.66,7.26-7.26,1.7-2.05-.77-5.06c-1.93-2.35-5.46.4-5.94.77-2.29,1.76-9.25,6.83-9.25,6.83H2.28Z" />
+                                            <path class="st0"
+                                                d="M9.99,62.78v-28.3c0-2.06,1.67-3.74,3.74-3.74h28.86c2.06,0,3.74,1.67,3.74,3.74v29.19c0,2.06-1.67,3.74-3.74,3.74h-2.57" />
+                                            <path class="st0"
+                                                d="M23.75,30.74v9.99c0,.32.26.58.58.58h7.76c.32,0,.58-.26.58-.58v-9.99" />
+                                            <path class="st0"
+                                                d="M15.46,30.74v-15.26c0-1.61,1.3-2.91,2.91-2.91h41.35l-7.84,7.51s-1.65,3.06,1.24,4.87,4.62.17,6.36-.91,8.75-6.69,8.75-6.69h9.5V1.92h-25.1c-3.06,0-5.86.99-8.01,3.55s-5.12,6.69-5.12,6.69" />
+                                            <path class="st0"
+                                                d="M62.94,21.51v17.26c0,1.63-1.32,2.95-2.95,2.95h-13.68" />
+                                            <path class="st0" d="M20.33,29.58v-8.42s3.8.74,4.54-3.39h29.41" />
+                                            <path class="st0" d="M58,24.99v7.57s-3.65.99-4.06,4.46h-7.62" />
+                                            <path class="st0"
+                                                d="M37.27,30.42c-1.2-.74-2-2.07-2-3.59,0-2.33,1.89-4.22,4.22-4.22s4.22,1.89,4.22,4.22c0,1.13-.45,2.16-1.17,2.92" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p data-i18n="advantages.1">零中介化直接交易模式</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="2" data-title="验证用户可成为余额供应者" data-content="打破传统支付模式，通过平台身份与风险验证后，用户也可以开启「售余额」功能，自主提供资金流给其他使用者，创造全新收益可能。
+                        
+                        - 参与资金流通：不只是消费者，也可以成为提供者。
+                        - 灵活资金运用：将闲置资金转化为收益来源。
+                        - 共享经济延伸：支付领域的共享经济实践。" data-icon="./images/tick_2.png">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        fill: none;
+                                                        stroke: #7a6fff;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-width: 3px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="st0"
+                                                d="M26.01,48.09l-14.45,5.53s-1.57.25-3.22,7.43-2.89,14.45-2.89,14.45c0,0-1.4,2.97,6.03,2.97h25.6" />
+                                            <path class="st0"
+                                                d="M70.85,60.72v13.3h-36.34v-23.07c0-.81.66-1.47,1.47-1.47h33.41c.81,0,1.47.66,1.47,1.47v4.97" />
+                                            <path class="st0"
+                                                d="M35.75,78.48h-3.31c-.96,0-1.74-.78-1.74-1.74h0c0-1.77,1.43-2.71,3.2-2.71h37.55c1.77,0,3.2.94,3.2,2.71h0c0,.96-.78,1.74-1.74,1.74h-30.23" />
+                                            <circle class="st0" cx="52.45" cy="61.76" r="2.92" />
+                                            <line class="st0" x1="6.6" y1="69.26" x2="16.35" y2="69.26" />
+                                            <line class="st0" x1="16.35" y1="66.05" x2="16.35" y2="78.48" />
+                                            <path class="st0"
+                                                d="M19.07,23.4v10.07c0,1.73,3.55,11.15,13.95,11.15s14.53-9.5,14.53-12.39v-13.18s-5.26-1.49-6.25-4.13c0,0-9.28,6.74-18.52,5.01,0,0-3.22.74-3.72,3.47Z" />
+                                            <polyline class="st0" points="39.96 42.95 39.96 48.09 45.41 49.49" />
+                                            <path class="st0" d="M27.25,43.49v6s-.5,4.21,7.26,4.29" />
+                                            <path class="st0"
+                                                d="M19.07,30.5c-.45.26-.98.42-1.54.42-1.69,0-3.05-1.37-3.05-3.05s1.37-3.05,3.05-3.05c.42,0,.82.09,1.19.24" />
+                                            <path class="st0"
+                                                d="M47.56,30.5c.45.26.98.42,1.54.42,1.69,0,3.05-1.37,3.05-3.05s-1.37-3.05-3.05-3.05c-.42,0-.82.09-1.19.24" />
+                                            <path class="st0" d="M15.11,24.81s-.91-6.86,1.67-14.21" />
+                                            <path class="st0"
+                                                d="M51.77,26.4s.83-9.93,0-12.33-.31-4.6-4.21-6.69c0,0-11.97-12.96-27.41-.33" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p data-i18n="advantages.2">验证用户可成为余额供应者</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="3" data-title="一秒到帐的极速体验" data-content="SPAY的核心技术能确保交易资金在确认后立即转移，让等待成为过去。
+
+                        - 即时到账：交易确认后资金秒速到位。
+                        - 实时查询：随时掌握资金流向与交易进度。
+                        - 动态通知：重要交易节点即时提醒，不错过任何资讯。" data-icon="./images/tick_2.png">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        fill: none;
+                                                        stroke: #7a6fff;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-width: 3px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <circle class="st0" cx="50.34" cy="46.93" r="19.98" />
+                                            <path class="st0"
+                                                d="M70.32,65.37c-4.97,5.38-12.08,8.75-19.98,8.75-15.02,0-27.19-12.17-27.19-27.19,0-5.59,1.69-10.79,4.59-15.12" />
+                                            <path class="st0"
+                                                d="M30.87,27.95c4.94-5.06,11.84-8.21,19.47-8.21,15.02,0,27.19,12.17,27.19,27.19,0,5.66-1.73,10.92-4.69,15.27" />
+                                            <line class="st0" x1="50.34" y1="26.95" x2="50.34" y2="30.58" />
+                                            <line class="st0" x1="37.49" y1="31.62" x2="39.83" y2="34.41" />
+                                            <line class="st0" x1="30.66" y1="43.46" x2="34.24" y2="44.09" />
+                                            <line class="st0" x1="33.03" y1="56.92" x2="36.18" y2="55.1" />
+                                            <line class="st0" x1="43.5" y1="65.71" x2="44.75" y2="62.29" />
+                                            <line class="st0" x1="57.17" y1="65.71" x2="55.93" y2="62.29" />
+                                            <line class="st0" x1="67.64" y1="56.92" x2="64.49" y2="55.1" />
+                                            <line class="st0" x1="70.01" y1="43.46" x2="66.44" y2="44.09" />
+                                            <line class="st0" x1="63.18" y1="31.62" x2="60.84" y2="34.41" />
+                                            <polyline class="st0" points="50.34 38.08 50.34 46.54 54.55 42.68" />
+                                            <path class="st0"
+                                                d="M44.72,19.65c-.11-.2-.17-.42-.17-.66v-3.62c0-.77.63-1.4,1.4-1.4h8.73c.77,0,1.4.63,1.4,1.4v3.62c0,.19-.04.38-.11.55" />
+                                            <line class="st0" x1="9.45" y1="34.3" x2="19.13" y2="34.3" />
+                                            <line class="st0" x1="6.98" y1="40.97" x2="18.21" y2="40.97" />
+                                            <line class="st0" x1="6.61" y1="53.75" x2="17.84" y2="53.75" />
+                                            <line class="st0" x1="9.99" y1="60.2" x2="19.45" y2="60.2" />
+                                            <line class="st0" x1="2.09" y1="47.64" x2="16.82" y2="47.64" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p data-i18n="advantages.3">一秒到帐的极速体验</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="4" data-title="买卖双方即时沟通" data-content="SPAY独有的内建通讯系统让交易双方能够直接交流，建立信任并确保交易顺利。
+                        
+                        - 即时对话：交易前中后全程沟通，解决各种疑问。
+                        - 档案传输：支援图片、文件等资料共享，协助确认交易细节。
+                        - 历史记录：完整保存对话内容，作为交易参考依据。" data-icon="./images/tick_2.png">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        fill: none;
+                                                        stroke: #7a6fff;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-width: 3px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="st0"
+                                                d="M33.3,2.69H7.65c-3.14,0-5.68,2.54-5.68,5.68v13.2c0,3.14,2.54,5.68,5.68,5.68v6.37l5.33-6.37h20.32c3.14,0,5.68-2.54,5.68-5.68v-13.2c0-3.14-2.54-5.68-5.68-5.68Z" />
+                                            <path class="st0"
+                                                d="M38.98,11.37h21.4c2.66,0,4.81,2.16,4.81,4.81v11.18c0,2.66-2.16,4.81-4.81,4.81v5.89s-4.51-5.89-4.51-5.89h-19.62c-2.66,0-4.81-2.16-4.81-4.81" />
+                                            <line class="st0" x1="9.67" y1="8.62" x2="31.43" y2="8.62" />
+                                            <line class="st0" x1="9.67" y1="14.89" x2="31.43" y2="14.89" />
+                                            <line class="st0" x1="9.67" y1="21.17" x2="20.47" y2="21.17" />
+                                            <polyline class="st0"
+                                                points="78.59 69.39 78.59 77.31 1.41 77.31 1.41 69.39" />
+                                            <polyline class="st0"
+                                                points="16.82 77.31 16.82 68.84 63.18 68.84 63.18 77.31" />
+                                            <path class="st0"
+                                                d="M6.36,37.41h5.63c1.82,0,3.3,1.48,3.3,3.3v6.55c0,3.38-2.74,6.12-6.12,6.12h0c-3.38,0-6.12-2.74-6.12-6.12v-6.55c0-1.82,1.48-3.3,3.3-3.3Z" />
+                                            <path class="st0"
+                                                d="M37.17,37.41h8.93v9.85c0,3.38-2.74,6.12-6.12,6.12h0c-3.38,0-6.12-2.74-6.12-6.12v-6.55c0-1.82,1.48-3.3,3.3-3.3Z" />
+                                            <path class="st0"
+                                                d="M67.94,37.41h5.63c1.82,0,3.3,1.48,3.3,3.3v6.55c0,3.38-2.74,6.12-6.12,6.12h0c-3.38,0-6.12-2.74-6.12-6.12v-6.55c0-1.82,1.48-3.3,3.3-3.3Z" />
+                                            <path class="st0"
+                                                d="M3.07,47.86s7.71,1.87,7.38-5.28c0,0,2.48,1.16,4.63.72" />
+                                            <path class="st0"
+                                                d="M76.76,47.86s-7.71,1.87-7.38-5.28c0,0-2.48,1.16-4.63.72" />
+                                            <line class="st0" x1="33.87" y1="42.58" x2="46.1" y2="42.58" />
+                                            <path class="st0" d="M1.53,64.38v-8.37c0-1.82,2.32-3.9,3.93-3.9" />
+                                            <path class="st0" d="M78.45,64.38s0-7.31,0-8.37c0-1.82-2.32-3.9-3.93-3.9" />
+                                            <path class="st0"
+                                                d="M12.6,52.33s1.92-.47,2.79.39,6.87,8.96,6.87,8.96h8.06c1.98,0,3.58,1.6,3.58,3.58h0c0,1.98-1.6,3.58-3.58,3.58h-2.35" />
+                                            <path class="st0" d="M28.7,61.68v-4.95c0-2.89,3.51-6.02,6.23-6.02" />
+                                            <path class="st0" d="M51.27,61.68v-4.95c0-2.89-3.51-6.02-6.23-6.02" />
+                                            <line class="st0" x1="12.6" y1="59.91" x2="19.17" y2="68.84" />
+                                            <path class="st0"
+                                                d="M67.37,52.33s-1.92-.47-2.79.39-6.87,8.96-6.87,8.96h-8.06c-1.98,0-3.58,1.6-3.58,3.58h0c0,1.98,1.6,3.58,3.58,3.58h2.35" />
+                                            <line class="st0" x1="67.37" y1="59.91" x2="60.81" y2="68.84" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p data-i18n="advantages.4">买卖双方即时沟通</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="5" data-title="24小时不打烊服务" data-content="SPAY提供全天候不间断的用户支援，确保您在任何时刻都能获得即时协助。
+
+                        - 多渠道支援：线上客服、电话专线、电子邮件等多种联系方式。
+                        - 智能客服系统：AI驱动的即时问答，快速解决常见问题。
+                        - 专业人工支援：复杂问题由经验丰富的客服团队提供专业指导。" data-icon="./images/tick_2.png">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        fill: none;
+                                                        stroke: #7a6fff;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-width: 3px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="st0"
+                                                d="M47.4,20.74c.18,1.08.27,2.19.27,3.33,0,9.13-6,16.53-13.41,16.53s-13.41-7.4-13.41-16.53c0-.98.07-1.95.2-2.88" />
+                                            <path class="st0"
+                                                d="M17.56,18.68v-9.25c0-2.48,2.56-8.01,8.83-8.01h15.11s3.96.08,3.96,4.38c0,0,5.12-.25,5.04,4.79-.08,5.04,0,7.51,0,7.51,0,0-.5,3.22-5.94,2.64v-6.1c0-2.48-2.15-5.05-5.78-3.72-3.63,1.33-6.85.99-10.57,0-3.72-.99-4.79,2.32-4.79,4.3v4.71s-2.54,2.89-5.86-1.24Z" />
+                                            <path class="st0"
+                                                d="M17.56,17.27s-2.48.73-2.48,3.46v3.47c0,1.65.95,4.05,5.76,3.3" />
+                                            <path class="st0"
+                                                d="M50.95,17.27s2.48.73,2.48,3.46v3.47c0,1.65-.95,4.05-5.76,3.3" />
+                                            <path class="st0" d="M52.54,26.57s1.29,7.64-7.21,6.47" />
+                                            <rect class="st0" x="38.26" y="30.46" width="7.08" height="4.81" rx="2.41"
+                                                ry="2.41" />
+                                            <path class="st0"
+                                                d="M19.57,44.63s-13.87,2.59-16.24,16.79c-2.37,14.2,3.96,13.93,3.96,13.93h39.52" />
+                                            <path class="st0"
+                                                d="M23.59,41.99l-4.02,2.64,6.59,6.84c1.09,1.13,2.88,1.21,4.06.18l4.04-3.5-10.67-6.17Z" />
+                                            <path class="st0" d="M27.15,38.08s.55,4.19-.98,5.4" />
+                                            <path class="st0" d="M48.94,44.63s2.66.5,5.84,2.24" />
+                                            <path class="st0"
+                                                d="M44.93,41.99l4.02,2.64-6.59,6.84c-1.09,1.13-2.88,1.21-4.06.18l-4.04-3.5,10.67-6.17Z" />
+                                            <path class="st0" d="M41.37,38.08s-.55,4.19.98,5.4" />
+                                            <polyline class="st0" points="29.44 52.14 31.96 56.25 28.38 75.35" />
+                                            <polyline class="st0" points="39.08 52.14 36.56 56.25 40.14 75.35" />
+                                            <line class="st0" x1="31.96" y1="56.25" x2="36.82" y2="56.25" />
+                                            <line class="st0" x1="14.51" y1="67.97" x2="14.51" y2="75.35" />
+                                            <circle class="st0" cx="62.53" cy="63.91" r="14.67" />
+                                            <path class="st0"
+                                                d="M54.47,60.71c.03-.83.45-1.64,1.11-2.15,1.17-.89,2.88-.74,3.85.31,2.65,2.87-3.9,9.03-4.64,10.14h5.8" />
+                                            <polyline class="st0"
+                                                points="71.77 65.49 64.26 65.49 69.29 56.7 69.29 69" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p data-i18n="advantages.5">24小时不打烊服务</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="6" data-title="鲜明UI，直觉式操作体验" data-content="精心设计的全新视觉语言与互动逻辑，带来更具未来感的支付体验。
+                            
+                            - 三步完成交易：选择对象、输入金额、确认支付，简单三步即可完成。
+                            - 智能引导：新手指引与操作提示，让您轻松驾驭各项功能。
+                            - 快速买币：一键自动搜寻并搓合卖家，轻松购币无烦恼。" data-icon="./images/tick_2.png">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        fill: none;
+                                                        stroke: #7a6fff;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-width: 3px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <rect class="st0" x="17.23" y="1.49" width="45.15" height="77.03" rx="6.13"
+                                                ry="6.13" />
+                                            <path class="st0"
+                                                d="M49.33,2.19v1.6c0,1.43-1.16,2.58-2.58,2.58h-13.87c-1.43,0-2.58-1.16-2.58-2.58" />
+                                            <line class="st0" x1="30.29" y1="3.79" x2="30.29" y2="1.86" />
+                                            <line class="st0" x1="29.81" y1="73.36" x2="48.8" y2="73.36" />
+                                            <line class="st0" x1="23.54" y1="43.8" x2="55.41" y2="34.47" />
+                                            <path class="st0"
+                                                d="M37.04,13.67v10.15c0,2.2-1.78,3.98-3.98,3.98h0c-2.2,0-3.98-1.78-3.98-3.98v-10.15" />
+                                            <path class="st0"
+                                                d="M37.04,49.5v10.15c0,2.2-1.78,3.98-3.98,3.98h0c-2.2,0-3.98-1.78-3.98-3.98v-10.15" />
+                                            <line class="st0" x1="42.03" y1="14.16" x2="50.29" y2="27.8" />
+                                            <line class="st0" x1="50.26" y1="14.16" x2="42" y2="27.8" />
+                                            <line class="st0" x1="42.03" y1="50.57" x2="50.29" y2="50.57" />
+                                            <line class="st0" x1="42.03" y1="63.63" x2="50.29" y2="63.63" />
+                                            <line class="st0" x1="46.16" y1="51.07" x2="46.16" y2="63.63" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p data-i18n="advantages.6">鲜明UI，直觉式操作体验</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="7" data-title="多样支付与提现方式" data-content="SPAY支援多种充值与提现管道，全面满足不同用户的使用习惯。
+                            
+                            - 主流支付整合：支付宝、微信、银行卡等传统支付方式。
+                            - 虚拟货币支援：支持USDT的数位货币选项。
+                            - QQ钱包兼容：完美对接QQ生态系统。" data-icon="./images/tick_2.png">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        stroke-miterlimit: 10;
+                                                    }
+
+                                                    .st0,
+                                                    .st1 {
+                                                        fill: none;
+                                                        stroke: #7a6fff;
+                                                        stroke-linecap: round;
+                                                        stroke-width: 3px;
+                                                    }
+
+                                                    .st1 {
+                                                        stroke-linejoin: round;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g>
+                                                <path class="st1"
+                                                    d="M48.16,59.78v11.91c0,3.38-2.74,6.13-6.13,6.13H10.52c-3.38,0-6.13-2.74-6.13-6.13V8.31c0-3.38,2.74-6.13,6.13-6.13h31.52c3.38,0,6.13,2.74,6.13,6.13v12.16" />
+                                                <path class="st1"
+                                                    d="M35.51,2.88v1.57c0,1.4-1.12,4.37-2.5,4.37h-13.45c-1.38,0-2.5-2.97-2.5-4.37v-2.26" />
+                                                <line class="st1" x1="23.5" y1="70.36" x2="29.05" y2="70.36" />
+                                            </g>
+                                            <g>
+                                                <g>
+                                                    <path class="st0"
+                                                        d="M52.85,34.93c.03-3.3-2.82-6.11-6.13-6-4.31.15-6.28,5.37-3.91,8.73,1.67,2.36,5,2.54,7.4,3.75,2.75,1.39,3.38,4.93,1.65,7.41-2.97,4.27-11.25,2.15-10.01-3.54" />
+                                                    <line class="st0" x1="46.72" y1="28.92" x2="46.72" y2="25.89" />
+                                                    <line class="st0" x1="46.72" y1="54.11" x2="46.72" y2="51.08" />
+                                                </g>
+                                                <circle class="st0" cx="47.29" cy="40" r="19.26" />
+                                            </g>
+                                            <path class="st0" d="M59.94,18.08c5.15,0,9.32,4.17,9.32,9.32" />
+                                            <path class="st0" d="M59.94,10.2c9.5,0,17.21,7.7,17.21,17.21" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p data-i18n="advantages.7">多样支付与提现方式</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                        <l1 class="block" data-id="8" data-title="最高级安全保障" data-content="采用严格的安全标准，确保每笔交易和用户资料的绝对安全。
+                        
+                        - 端到端加密：所有通讯内容与交易数据均经过高强度加密。
+                        - 严密认证登入：双重验证机制，有效防止未授权操作。
+                        - 即时风控：实时监测异常交易行为，主动防范风险。" data-icon="./images/tick_2.png">
+                            <div class="block_content">
+                                <div class="block_svg">
+                                    <div class="block_svg_content">
+                                        <svg id="block_svg" data-name="block_svg" xmlns="http://www.w3.org/2000/svg"
+                                            version="1.1" viewBox="0 0 80 80">
+                                            <defs>
+                                                <style>
+                                                    .st0 {
+                                                        fill: none;
+                                                        stroke: #7a6fff;
+                                                        stroke-linecap: round;
+                                                        stroke-miterlimit: 10;
+                                                        stroke-width: 3px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <rect class="st0" x="17.54" y="1.54" width="44.54" height="76.91" rx="2.38"
+                                                ry="2.38" />
+                                            <line class="st0" x1="34.65" y1="73.9" x2="44.94" y2="73.9" />
+                                            <line class="st0" x1="17.52" y1="68.46" x2="62.07" y2="68.46" />
+                                            <line class="st0" x1="17.52" y1="7.79" x2="62.07" y2="7.79" />
+                                            <rect class="st0" x="28.91" y="34.11" width="21.79" height="19.53" rx="1.98"
+                                                ry="1.98" />
+                                            <path class="st0"
+                                                d="M33.46,34.11v-5.27c0-3.51,2.84-6.35,6.35-6.35h0c3.51,0,6.35,2.84,6.35,6.35v5.27" />
+                                            <circle class="st0" cx="39.81" cy="41.29" r="2.59" />
+                                            <line class="st0" x1="39.81" y1="43.87" x2="39.81" y2="49.08" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block_text">
+                                    <div class="block_text_content">
+                                        <p data-i18n="advantages.8">最高级安全保障</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </l1>
+                    </ul>
+
+                    <!-- 彈窗內容 -->
+                    <div class="overlay" id="overlay">
+                        <div class="modal" id="modal">
+                            <button class="close-btn" id="closeBtn">&times;</button>
+                            <div class="modal-header">
+                                <img id="modalIcon" src="" alt="icon">
+                                <h2 class="modal-title" id="modalTitle">標題</h2>
+                            </div>
+                            <p id="modalContent">內容</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="policy">
+                <div class="policy_content">
+                    <div class="policy_title">
+                        <div class="policy_title_content">
+                            <p data-i18n="policy.title">SPAY透明收费政策</p>
+                        </div>
+                    </div>
+                    <div class="policy_ul">
+                        <div class="policy_ul_content">
+                            <ul>
+                                <li>
+                                    <p data-i18n="policy.user_type">使用者类型 / 费用说明</p>
+                                </li>
+                                <li>
+                                    <p data-i18n="policy.personal_user">个人用户</p>
+                                </li>
+                                <li>
+                                    <img src="./images/tick_1.png" alt="">
+                                    <p data-i18n="policy.personal_free">基本功能完全免费</p>
+                                </li>
+                            </ul>
+                            <ol>
+                                <li>
+                                    <p data-i18n="policy.user_type">使用者类型 / 费用说明</p>
+                                </li>
+                                <li>
+                                    <p data-i18n="policy.business_user">商业用户：</p>
+                                </li>
+                                <li>
+                                    <img src="./images/tick_1.png" alt="">
+                                    <p data-i18n="policy.business_features">提供客制化解决方案与专属费率，并享有增值服务与技术支持。</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vision_text">
+                <div class="vision_text_content">
+                    <div class="vision_title">
+                        <div class="vision_text_content" id="Vision">
+                            <h1 data-i18n="vision.title">我们的愿景</h1>
+                            <p data-i18n="vision.subtitle">人人皆可参与的资金网路</p>
+                        </div>
+                    </div>
+                    <div class="vision_p">
+                        <div class="vision_p_content">
+                            <p data-i18n="vision.content">
+                                SPAY相信支付不仅是金钱的转移，更是价值的传递与连结。我们致力于打造一个更公平、更透明、更高效的支付环境，让每个人都能在合规、安全前提下参与资金运作，成为这个新经济生态系统中的活跃节点。
+
+                                加入SPAY，体验「不只是支付」的创新力量，一同开创支付的未来！
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vision">
+                <div class="vision_content">
+                    <img src="./images/advantages_bg.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+
+    <div class="footer" id="connect">
+        <div class="footer_content">
+            <p data-i18n="footer.copyright">Copyright © 2020-2025 SPay. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+
+
+
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        let currentLang = 'zh-CN'; // 預設語言為中文
+
+        function toggleDropdown(event) {
+            event.preventDefault();
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.classList.toggle('show');
+        }
+
+        function changeLanguage(lang) {
+            currentLang = lang;
+
+            // 檢查 translations 是否存在
+            if (typeof translations === 'undefined') {
+                console.error("Translations object is not defined.");
+                return;
+            }
+
+            // 更新所有具有 data-i18n 的元素
+            const elements = document.querySelectorAll("[data-i18n]");
+            elements.forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                if (translations[lang]?.[key]) {
+                    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                        el.value = translations[lang][key];
+                    } else {
+                        el.textContent = translations[lang][key];
+                    }
+                }
+            });
+
+            // 更新語言圖示和國旗
+            const languageIcon = document.getElementById('languageIcon');
+            const flagIcon = document.querySelector('.flag-icon');
+
+            // 語言圖示映射
+            const langIconMap = {
+                'zh-CN': '1',
+                'en': '2',
+                'ja': '3'
+            };
+
+            // 國旗圖示映射
+            const flagIconMap = {
+                'zh-CN': 'cn',
+                'en': 'us',
+                'ja': 'jp'
+            };
+
+            // 更新語言圖示
+            if (languageIcon) {
+                languageIcon.src = `./images/icon_${langIconMap[lang] || '1'}.svg`;
+            }
+
+            // 更新國旗圖示
+            if (flagIcon) {
+                flagIcon.src = `./images/flag_${flagIconMap[lang] || 'us'}.svg`;
+                flagIcon.alt = `flag_${lang}`;
+            }
+
+            // 關閉語言選單
+            document.getElementById('dropdownMenu').classList.remove('show');
+
+            // 設定 <html lang="">
+            document.documentElement.lang = lang;
+        }
+
+        // 頁面載入後初始化
+        document.addEventListener('DOMContentLoaded', function () {
+            changeLanguage(currentLang); // 預設語言與圖示設定
+
+            // 获取弹窗相关元素
+            const overlay = document.getElementById('overlay');
+            const closeBtn = document.getElementById('closeBtn');
+            const fixedHeader = document.querySelector('.fixed');
+
+            // 点击关闭按钮时
+            closeBtn.addEventListener('click', function () {
+                overlay.style.display = 'none';
+                if (fixedHeader) {
+                    fixedHeader.classList.remove('hidden');
+                }
+            });
+
+            // 点击遮罩层时
+            overlay.addEventListener('click', function (e) {
+                if (e.target === overlay) {
+                    overlay.style.display = 'none';
+                    if (fixedHeader) {
+                        fixedHeader.classList.remove('hidden');
+                    }
+                }
+            });
+
+            // 显示弹窗时
+            function showModal() {
+                overlay.style.display = 'flex';
+                if (fixedHeader) {
+                    fixedHeader.classList.add('hidden');
+                }
+            }
+
+            // 为所有需要触发弹窗的元素添加点击事件
+            document.querySelectorAll('.block').forEach(block => {
+                block.addEventListener('click', function () {
+                    const id = this.getAttribute('data-id');
+                    const title = this.getAttribute('data-title');
+                    const content = this.getAttribute('data-content');
+
+                    // 更新弹窗内容
+                    document.getElementById('modalTitle').textContent = translations[currentLang][`modal.${id}.title`] || title;
+                    document.getElementById('modalContent').textContent = translations[currentLang][`modal.${id}.content`] || content;
+
+                    // 显示弹窗
+                    overlay.style.display = 'flex';
+                    if (fixedHeader) {
+                        fixedHeader.classList.add('hidden');
+                    }
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>
