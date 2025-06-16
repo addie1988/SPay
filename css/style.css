@@ -580,6 +580,8 @@ body {
 }
 
 .advantages .advantages_content .advantages_title .advantages_title_content {
+  width: 100%;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
