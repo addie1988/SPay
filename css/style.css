@@ -539,6 +539,9 @@ body {
   .position .position_content .position_area .position_area_content .position_area_img .position_area_img_content {
     text-align: center;
   }
+  .position .position_content .position_area .position_area_content .position_area_img .position_area_img_content img {
+    width: 90%;
+  }
   .position .position_content .position_area .position_area_content .position_text {
     width: 90%;
     margin-top: 60px;
