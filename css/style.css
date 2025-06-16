@@ -910,7 +910,6 @@ body {
 
 @media screen and (max-width: 1273px) {
   .advantages {
-    overflow: hidden;
     margin-bottom: 0px;
     margin-top: 80px;
   }
