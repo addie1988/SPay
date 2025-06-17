@@ -39,8 +39,23 @@ window.addEventListener('click', () => {
 // 錨點 scroll
 document.querySelectorAll('.scroll-link').forEach(link => {
   link.addEventListener('click', (e) => {
-    // 可自訂：GA 追蹤、動畫、console log 等
-    console.log(`前往 ${link.getAttribute('href')}`);
+    e.preventDefault(); // 防止立即跳轉
+    
+    const targetId = link.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    
+    if (targetElement) {
+      // 可自訂：GA 追蹤、動畫、console log 等
+      console.log(`前往 ${targetId}`);
+      
+      // 延遲 500 毫秒後滾動
+      setTimeout(() => {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 300);
+    }
   });
 });
 

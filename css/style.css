@@ -638,7 +638,8 @@ body {
 .advantages .advantages_content .advantages_ul .advantages_ul_content .block-container .block .block_content {
   height: 100%;
   margin: 0 auto;
-  border-radius: 16px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .advantages .advantages_content .advantages_ul .advantages_ul_content .block-container .block .block_content .block_svg {
@@ -649,8 +650,6 @@ body {
   justify-content: center;
   padding: 30px 0;
   background-color: #fff;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
 }
 
 .advantages .advantages_content .advantages_ul .advantages_ul_content .block-container .block .block_content .block_svg svg {
