@@ -205,8 +205,6 @@ body
     position: relative
     z-index: -2
     width: 100%
-    max-width: 1920px
-    height: 700px
     margin-left: auto
     margin-right: auto
     overflow: hidden
@@ -220,6 +218,7 @@ body
             position: relative
             display: flex
             align-items: end
+            width: 100%
             .banner_main
                 position: absolute
                 width: 100%
@@ -248,11 +247,15 @@ body
                             position: relative
                             .banner_main_button_dow_content
                                 display: block
-                                h1
+                                img
+                                    margin-bottom: 20px
+                                h6
                                     color: #fff
-                                    line-height: 2
+                                    line-height: 1.4
+                                    font-size: 14px
             .banner_img_content
                 margin: 0 auto
+                width: 100%
                 img
                     width: 100%
                     height: 100%
@@ -462,14 +465,14 @@ body
 // advantages
 .advantages
     position: relative
-    margin-bottom: 650px
+    margin-bottom: 340px
     @extend %display_flex
     &::after
         content: ''
         position: absolute
         top: 0
         left: 0
-        width: 115%
+        width: 100%
         height: 101rem
         display: none
         background-color: $main_color_span
@@ -709,9 +712,11 @@ body
                             text-shadow: 0 0 10px rgba(0, 0, 0, 1)
         .vision
             position: absolute
-            top: -15%
+            top: -9%
             width: 100%
             text-align: center
+            display: flex
+            justify-content: center
             z-index: -1
             overflow: hidden
             .vision_content
