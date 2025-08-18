@@ -4,7 +4,7 @@ const translations = {
         'nav.position': '我们的定位',
         'nav.advantages': '核心优势',
         'nav.vision': '我们的愿景',
-        'nav.contact': '聯繫窗口',
+        'nav.contact': '联系窗口',
         
         // Banner
         'banner.title': 'SPay是一款突破传统框架的创新支付平台，不只提供即时安全的资金流通服务，更打破中介壁垒，让用户直接交易，并开放经过验证的用户成为「余额供应者」，真正实现共享经济在支付领域的应用。',
@@ -89,7 +89,7 @@ const translations = {
         'nav.position': 'Our Position',
         'nav.advantages': 'Core Advantages',
         'nav.vision': 'Our Vision',
-        'nav.contact': 'Contact Window',
+        'nav.contact': 'Contact Us',
         
         // Banner
         'banner.title': 'SPay is an innovative payment platform that breaks through traditional frameworks, not only providing instant and secure fund circulation services but also breaking down intermediary barriers, enabling direct user transactions, and allowing verified users to become "Balance Providers", truly realizing the application of sharing economy in the payment field.',
@@ -183,7 +183,7 @@ const translations = {
         'nav.position': '私たちの位置づけ',
         'nav.advantages': 'コアアドバンテージ',
         'nav.vision': '私たちのビジョン',
-        'nav.contact': '連絡窓口',
+        'nav.contact': 'お問い合わせ',
         
         // バナー
         'banner.title': 'SPayは従来の枠組みを超えた革新的な決済プラットフォームであり、即時かつ安全な資金流通サービスを提供するだけでなく、仲介障壁を打破し、ユーザー間の直接取引を可能にし、検証済みユーザーが「残高提供者」となることを可能にし、決済分野におけるシェアリングエコノミーの真の実現を目指しています。',
